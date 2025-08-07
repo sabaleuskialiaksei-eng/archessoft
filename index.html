@@ -56,55 +56,41 @@
       padding: 2rem 1rem;
     }
 
-    .card {
-      background: var(--card-bg);
-      backdrop-filter: blur(20px);
-      border-radius: 1rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
-      width: 100%;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-    }
-
-    .card p {
-      margin: 0.5rem 0 0;
-      line-height: 1.5;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      color: var(--link-color);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
+    .card,
     .contact-card {
       background: var(--card-bg);
       backdrop-filter: blur(20px);
       border-radius: 1rem;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
       max-width: 600px;
-      width: 100%;
+      width: calc(100% - 2rem);
       padding: 1.5rem;
       margin-bottom: 2rem;
-      text-align: center;
     }
 
+    .contact-card {
+      background: var(--card-bg);
+    }
+
+    .card h2,
     .contact-card h2 {
       margin-top: 0;
       font-size: 1.5rem;
     }
 
+    .card p,
+    .contact-card p {
+      margin: 0.5rem 0 0;
+      line-height: 1.5;
+    }
+
+    .card a,
     .contact-card a {
+      display: inline-block;
+      margin-top: 1rem;
       color: var(--link-color);
       text-decoration: none;
+      font-weight: 500;
     }
 
     footer {
@@ -122,8 +108,9 @@
 </head>
 <body>
   <header>
-    <h1>Aliaksei Sabaleuski | ArchesSoft</h1>
-    <p class="subtitle">Mobile Applications Engineering | iOS & Android</p>
+    <h1>Aliaksei Sabaleuski</h1>
+    <h2>ArchesSoft</h2>
+    <p class="subtitle">Mobile Application Engineering | iOS & Android</p>
   </header>
 
   <section class="container">
@@ -135,8 +122,8 @@
 
     <div class="contact-card">
       <h2>Contact Us</h2>
-      <p><a href="mailto:sabaleuskialiaksei@gmail.com">sabaleuskialiaksei@gmail.com</a></p>
-      <p>ArchesSoft.com</p>
+      <p>Email: <a href="mailto:sabaleuskialiaksei@gmail.com">sabaleuskialiaksei@gmail.com</a></p>
+      <p>Website: ArchesSoft.com</p>
     </div>
   </section>
 
