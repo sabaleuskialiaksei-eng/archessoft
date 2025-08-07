@@ -1,10 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aliaksei Sabaleuski | ArchesSoft</title>
+  <style>
+    :root {
+      --bg-color: #f9f4ef;
+      --text-color: #1c1c1e;
+      --subtitle-color: #5a5a5a;
+      --card-bg: rgba(255, 255, 255, 0.6);
+      --contact-bg: rgba(255, 255, 255, 0.65);
+      --link-color: #007aff;
+      --footer-color: #666;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #1c1c1e;
+        --text-color: #f2f2f7;
+        --subtitle-color: #aaa;
+        --card-bg: rgba(44, 44, 46, 0.85);
+        --contact-bg: rgba(58, 45, 35, 0.85);
+        --link-color: #0a84ff;
+        --footer-color: #666;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg-color);
+      margin: 0;
+      padding: 0;
+      color: var(--text-color);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    p.subtitle {
+      color: var(--subtitle-color);
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      margin: 0.5rem 0 0;
+      line-height: 1.5;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--link-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-card {
+      background: var(--contact-bg);
+      backdrop-filter: blur(20px);
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .contact-card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .contact-card a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--footer-color);
+    }
+
+    .footer-contact {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
 <body>
-  <h1>Arches Soft</h1>
-  <p>If you have any questions, suggestions, or issues, feel free to contact us at:</p>
-  <p><strong>Email:</strong> <a href="mailto:sabaleuskialiaksei@gmail.com">sabaleuskialiaksei@gmail.com</a></p>
-  <p>We will do our best to get back to you as soon as possible.</p>
-  <p>Thank you for using History V!</p>
+  <header>
+    <h1>Aliaksei Sabaleuski | ArchesSoft</h1>
+    <p class="subtitle">Mobile Applications Engineering | iOS & Android</p>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <h2>History V</h2>
+      <p>Discover five fascinating historical events that happened on this day, every day. Available on iOS and coming soon to Android.</p>
+      <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">View on App Store</a>
+    </div>
+
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:sabaleuskialiaksei@gmail.com">sabaleuskialiaksei@gmail.com</a></p>
+      <p>ArchesSoft.com</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Aliaksei Sabaleuski. All rights reserved.
+  </footer>
 </body>
 </html>
