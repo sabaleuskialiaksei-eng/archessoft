@@ -1,140 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aliaksei Sabaleuski | ArchesSoft</title>
-  <style>
-    :root {
-      --bg-color: #f9f4ef;
-      --text-color: #1c1c1e;
-      --subtitle-color: #5a5a5a;
-      --card-bg: rgba(255, 255, 255, 0.6);
-      --link-color: #007aff;
-      --footer-color: #666;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg-color: #1c1c1e;
-        --text-color: #f2f2f7;
-        --subtitle-color: #aaa;
-        --card-bg: rgba(44, 44, 46, 0.85);
-        --link-color: #0a84ff;
-        --footer-color: #666;
-      }
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg-color);
-      margin: 0;
-      padding: 0;
-      color: var(--text-color);
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem 1rem 1rem;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    p.subtitle {
-      color: var(--subtitle-color);
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1rem;
-    }
-
-    .card,
-    .contact-card {
-      background: var(--card-bg);
-      backdrop-filter: blur(20px);
-      border-radius: 1rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
-      width: calc(100% - 2rem);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .contact-card {
-      background: var(--card-bg);
-    }
-
-    .card h2,
-    .contact-card h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-    }
-
-    .card p,
-    .contact-card p {
-      margin: 0.5rem 0 0;
-      line-height: 1.5;
-    }
-
-    .card a,
-    .contact-card a {
-      display: inline-block;
-      margin-top: 1rem;
-      color: var(--link-color);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: var(--footer-color);
-    }
-
-    .footer-contact {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="History V and Quick Jokes by ArchesSoft, available on the App Store. Android editions and Simple Horoscope are in development.">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta property="og:title" content="ArchesSoft · A little discovery, every day">
+  <meta property="og:description" content="Discover History V and Quick Jokes, independent mobile apps by Aliaksei Sabaleuski.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://archessoft.com/">
+  <link rel="canonical" href="https://archessoft.com/">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>ArchesSoft · History V, Quick Jokes &amp; Simple Horoscope</title>
 </head>
 <body>
-  <header>
-    <h1>Aliaksei Sabaleuski</h1>
-    <h2>ArchesSoft</h2>
-    <p class="subtitle">Mobile Application Engineering | iOS & Android</p>
-  </header>
-
-  <section class="container">
-    <div class="card">
-      <h2>History V</h2>
-      <p>Discover five fascinating historical events that happened on this day, every day. Available on iOS and coming soon to Android.</p>
-      <a href="https://apps.apple.com/us/app/history-v/id6749466519" target="_blank">View on App Store</a>
-    </div>
-    
-    <div class="card">
-      <h2>Simple Horoscope</h2>
-      <p>Whether you’re looking for a quick dose of inspiration, insight into relationships, or a sense of direction, Simple Horoscope is your daily companion. Available on iOS and coming soon to Android.</p>
-      <a href="https://apps.apple.com/app/id6751123508" target="_blank">View on App Store</a>
-    </div>
-
-    <div class="contact-card">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:sabaleuskialiaksei@gmail.com">sabaleuskialiaksei@gmail.com</a></p>
-      <p>Website: ArchesSoft.com</p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Aliaksei Sabaleuski. All rights reserved.
-  </footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="ArchesSoft home"><span class="brand-mark" aria-hidden="true"></span>ArchesSoft</a>
+      <nav class="site-nav" aria-label="Main navigation"><a href="#apps">Our apps</a><a href="#contact">Get in touch <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="headline">
+        <div>
+          <span class="eyebrow">Independent apps. Everyday moments.</span>
+          <h1 id="headline">A little curiosity.<br>A little <em>joy.</em></h1>
+          <p class="hero-copy">Explore a moment in history. Share a quick laugh. Small apps that bring something good to your day.</p>
+          <a class="button" href="#apps">Meet the apps <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="daily-card history"><img src="assets/historyv-icon.webp" alt="" width="55" height="55"><strong>History V</strong><span class="number">5</span><span class="caption">moments from this day in history</span></div>
+          <div class="daily-card jokes"><img src="assets/quickjokes-icon.webp" alt="" width="55" height="55"><strong>Quick Jokes</strong><span class="number">10</span><span class="caption">little reasons to smile, every day</span></div>
+        </div>
+      </section>
+      <section id="apps" aria-labelledby="apps-heading">
+        <div class="section-heading"><h2 id="apps-heading">Your daily companions.</h2><p>Made by Aliaksei Sabaleuski.</p></div>
+        <div class="apps-grid">
+          <article class="app-card">
+            <div class="app-visual"><img class="app-icon" src="assets/historyv-icon.webp" alt="" width="100" height="100"><span class="motif" aria-hidden="true">On this day.</span></div>
+            <div class="app-details">
+              <h3>History V</h3><p>Five historical events from today’s date. A few minutes to discover something you didn’t know yesterday.</p>
+              <div class="availability"><span class="badge">Available on iOS</span><span>Android in development</span></div>
+              <a class="button" href="https://apps.apple.com/app/id6749466519">View on the App Store <span aria-hidden="true">↗</span></a>
+              <div class="app-links"><a href="historyv/support/support.html">Support</a><a href="historyv/privacy/privacy.html">Privacy policy</a></div>
+            </div>
+          </article>
+          <article class="app-card jokes">
+            <div class="app-visual"><img class="app-icon" src="assets/quickjokes-icon.webp" alt="" width="100" height="100"><span class="motif" aria-hidden="true">Just for laughs.</span></div>
+            <div class="app-details">
+              <h3>Quick Jokes</h3><p>Ten short jokes for a lighter day. Read a card, enjoy a laugh, and send a little happiness to someone else.</p>
+              <div class="availability"><span class="badge">Available on iOS</span><span>Android in development</span></div>
+              <a class="button" href="https://apps.apple.com/app/id6751600208">View on the App Store <span aria-hidden="true">↗</span></a>
+              <div class="app-links"><a href="quickjokes/support/support.html">Support</a><a href="quickjokes/privacy/privacy.html">Privacy policy</a></div>
+            </div>
+          </article>
+        </div>
+        <article class="wip-card">
+          <img class="app-icon" src="assets/simplehoroscope-icon.webp" alt="" width="80" height="80">
+          <div><span class="eyebrow">In development</span><h3>Simple Horoscope</h3><p>A daily horoscope app taking shape. For entertainment and a moment of reflection.</p><div class="app-links"><a href="simplehoroscope/support/support.html">Support</a><a href="simplehoroscope/privacy/privacy.html">Privacy policy</a></div></div>
+          <span class="wip-note">More to come.<br>No release date announced.</span>
+        </article>
+      </section>
+      <section class="contact-panel" id="contact" aria-labelledby="contact-heading">
+        <div><span class="eyebrow">A direct line to the developer</span><h2 id="contact-heading">Let’s hear from you.</h2><p>Questions, feedback, or a moment worth sharing.</p></div>
+        <div class="contact-links"><a class="email" href="mailto:sabaleuskialiaksei@gmail.com">sabaleuskialiaksei@gmail.com <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2026 Aliaksei Sabaleuski · ArchesSoft</span><span><a href="historyv/privacy/privacy.html">History V privacy</a> &nbsp;·&nbsp; <a href="quickjokes/privacy/privacy.html">Quick Jokes privacy</a> &nbsp;·&nbsp; <a href="simplehoroscope/privacy/privacy.html">Simple Horoscope privacy</a></span></footer>
+  </div>
 </body>
 </html>
